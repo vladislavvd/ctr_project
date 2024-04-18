@@ -32,6 +32,7 @@ class TrainingPipelineParams:
     input_preprocessed_data_path: str = field(
         default="../data/raw/sampled_preprocessed_train_50k.csv"
     )
+    use_mlflow: str = field(default=True)
 
 
 TrainingPipelineParamsSchema = class_schema(TrainingPipelineParams)
